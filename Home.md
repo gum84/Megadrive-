@@ -1,3 +1,5 @@
+# Welcome to the MegaDrivePlusPlus wiki!
+
 **MegaDrivePlusPlus** is a modchip for the **Sega Mega Drive** (AKA **Sega Genesis**) that enables IGR (*In-Game-Reset*), and 50/60 Hz and Language switching in a... switchless fashion.
 
 ## Features
