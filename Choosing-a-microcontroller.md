@@ -1,5 +1,3 @@
-## Choosing a microcontroller
-
 **MegaDrivePlusPlus can run on several microcontrollers**, supporting different subsets of functionalities. It can probably be ported to many others with little effort, thanks to the flexibility of the Arduino platform.
 
 If you are not too much into the Arduino world, this variety can be confusing, so here's how to choose the best microcontroller for you:
