@@ -9,7 +9,7 @@ autosensing. Only the former was tested, though :).
 - **EUR/USA/JAP mode switching**:
   - Through Reset button: Keep pushed to cycle through modes.
   - From pad: Press **Start + B + Left/Right** to cycle through modes or **Start + Down/Left/Right** to set a certain mode.
-  - The last used mode is saved after 10 seconds and reused at power up.
+  - The last used mode is saved after 5 seconds and reused at power up.
   - Supports common-anode or common-cathode, dual or RGB LEDs to indicate the current mode (Colors can be set to any value when PWM pins are available).
   - Can also indicate the current mode by flashing a single LED, if you don't
 feel like replacing the original LED.
