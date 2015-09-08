@@ -17,8 +17,7 @@ feel like replacing the original LED.
   - Can be **flashed on different chips** (ATtiny's, ATmega's, or **even a full
 Arduino** board), but please note that **not all features are supported on all chips**, depending on
 the number of available I/O pins, please read on for details.
-  - If flashed on an ATtiny84, it is **pin-to-pin compatibile with the *D4s/Seb
-mod***.
+  - If flashed on an ATtiny84, it is **pin-to-pin compatibile with the _D4s/Seb mod_**.
 - Last but not least, Even though default settings are recommended, **everything can be customized** to taste.
 
 
