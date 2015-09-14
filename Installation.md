@@ -9,11 +9,13 @@ If your model is not listed, please open an issue providing high resolution phot
 You will also need to cut some tracks, so keep a sharp cutter handy.
 
 Color-Signal key:
-* <font color="red">Red</font>: +5V
-* White: Ground
-* Orange: Reset In
-* Light Blue: Reset Out
-* Yellow: JP1/2 (Language)
-* Green: JP3/4 (Video Mode)
-* Purple: Led Color 1
-* Blue: Led Color 2
+| Color   | Signal             |
+|---------|--------------------|
+| Red     | +5V                |
+| White   | Ground             |
+| Orange  | Reset In           |
+| Light Blue | Reset Out       |
+| Yellow  | JP1/2 (Language)   |
+| Green   | JP3/4 (Video Mode) |
+| Purple  | Led Color 1        |
+| Blue    | Led Color 2        |
