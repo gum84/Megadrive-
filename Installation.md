@@ -15,7 +15,7 @@ Color-Signal key:
 | Red     | +5V                |
 | White   | Ground             |
 | Orange  | Reset In           |
-| Light Blue | Reset Out       |
+| Aqua    | Reset Out          |
 | Yellow  | JP1/2 (Language)   |
 | Green   | JP3/4 (Video Mode) |
 | Purple  | Led Color 1        |
