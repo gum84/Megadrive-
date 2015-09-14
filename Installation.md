@@ -9,6 +9,7 @@ If your model is not listed, please open an issue providing high resolution phot
 You will also need to cut some tracks, so keep a sharp cutter handy.
 
 Color-Signal key:
+
 | Color   | Signal             |
 | ------- | ------------------ |
 | Red     | +5V                |
