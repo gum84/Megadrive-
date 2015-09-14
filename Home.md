@@ -8,7 +8,7 @@
 autosensing.
 - **EUR/USA/JAP mode switching**:
   - Through Reset button: Keep pushed to cycle through modes.
-  - From pad: Press **Start + B + Left/Right** to cycle through modes or **Start + Down/Left/Right** to set a certain mode.
+  - From pad: Press **Start + B + Up/Down** to cycle through modes or **Start + Down/Left/Right** to set a certain mode.
   - The last used mode is saved after 5 seconds and reused at power up.
   - Supports a single led, common-anode or common-cathode dual or RGB LEDs to indicate the current mode (Colors can be set to any value when PWM pins are available).
 - Uses **cheap *Atmel AVR* microcontrollers**.
