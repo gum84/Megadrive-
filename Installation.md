@@ -9,7 +9,7 @@ If your model is not listed, please open an issue providing high resolution phot
 You will also need to cut some tracks, so keep a sharp cutter handy.
 
 Color-Signal key:
-* Red: +5V
+* <font color="red">Red</font>: +5V
 * White: Ground
 * Orange: Reset In
 * Light Blue: Reset Out
