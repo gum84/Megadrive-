@@ -10,7 +10,7 @@ You will also need to cut some tracks, so keep a sharp cutter handy.
 
 Color-Signal key:
 | Color   | Signal             |
-|---------|--------------------|
+| ------- | ------------------ |
 | Red     | +5V                |
 | White   | Ground             |
 | Orange  | Reset In           |
