@@ -7,7 +7,7 @@
 5. **Set** the following options in the _Tools_ menu:
    * Board: _ATtiny x4 Series_
    * B.O.D.: _B.O.D. Enabled (4.3v)_
-   * Clock: _8 MHz (Internal)_ **BE VERY CAREFUL WITH THIS STEP!**
+   * Clock: _8 MHz (Internal)_ **BE VERY CAREFUL WITH THIS!**
    * Chip: _ATtiny84_
    * Port: Choose whatever port you connected your programmer to.
 6. **Select** **Burn Bootloader** from the _Tools_ menu. Wait for the _Done burning bootloader_ message to appear.
