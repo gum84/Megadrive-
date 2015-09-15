@@ -5,10 +5,10 @@
 3. **Open** the Arduino IDE.
 4. **Connect** your chip as an ICSP target.
 5. **Set** the following options in the _Tools_ menu:
-   * Board: ATtiny x4 Series
-   * B.O.D.: B.O.D. Enabled (4.3v)
-   * Clock: 8 MHz (Internal)
-   * Chip: ATtiny84
+   * Board: _ATtiny x4 Series_
+   * B.O.D.: _B.O.D. Enabled (4.3v)_
+   * Clock: _8 MHz (Internal)_ **BE VERY CAREFUL WITH THIS STEP!**
+   * Chip: _ATtiny84_
    * Port: Choose whatever port you connected your programmer to.
 6. **Select** **Burn Bootloader** from the _Tools_ menu. Wait for the _Done burning bootloader_ message to appear.
 7. **Select** _Open..._ from the File menu and open the _MegaDrivePlusPlus_ sketch 
