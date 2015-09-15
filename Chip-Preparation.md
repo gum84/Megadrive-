@@ -1,7 +1,7 @@
-1. Download the Arduino IDE and install it.
-2. If you are targeting an ATtiny chip, download ATTinyCore, install it and make sure it shows up under Boards in your Arduino IDE.
+1. **Download the Arduino IDE** (latest stable version from https://www.arduino.cc/en/Main/Software) and install it.
+2. If you are targeting an ATtiny chip, **download ATTinyCore** from https://github.com/SpenceKonde/ATTinyCore, install it and make sure it shows up under Boards in your Arduino IDE.
 3. **Close** the Arduino IDE.
-3. **Download** the _MegaDrivePlusPlus_ sketch and save it in a directory with the same name in your Arduino sketch folder.
+3. **Download the _MegaDrivePlusPlus_ sketch** and save it in a directory with the same name in your Arduino sketch folder.
 3. **Open** the Arduino IDE.
 4. **Connect** your chip as an ICSP target.
 5. **Set** the following options in the _Tools_ menu:
