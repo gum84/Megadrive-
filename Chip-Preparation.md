@@ -1,4 +1,4 @@
-Follow these instructions to prepare your own chip. If you are targeting a bare ATtiny chip you will need an ICSP programmer, or you can use an Arduino board following the instructions at https://www.arduino.cc/en/Tutorial/ArduinoISP.
+Follow these instructions to prepare your own modchip. If you are targeting a bare ATtiny chip you will need an ICSP programmer, or you can use an Arduino board following the instructions at https://www.arduino.cc/en/Tutorial/ArduinoISP.
 
 1. **Download the Arduino IDE** (latest stable version from https://www.arduino.cc/en/Main/Software) and install it.
 2. If you are targeting an ATtiny chip, **download ATTinyCore** from https://github.com/SpenceKonde/ATTinyCore, install it and make sure it shows up under Boards in your Arduino IDE.
