@@ -1,4 +1,4 @@
-This scheme supports at least the following logic board revisions:
+This scheme covers at least the following logic board revisions:
 * PC BD MD2 VA1 PAL
 * PC BD MD2 VA1.0 PAL
 
