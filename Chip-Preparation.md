@@ -11,7 +11,7 @@
    * Chip: ATtiny84
    * Port: Choose whatever port you connected your programmer to.
 6. **Select** **Burn Bootloader** from the _Tools_ menu. Wait for the _Done burning bootloader_ message to appear.
-7. **Select** Open... from the File menu and open the _MegaDrivePlusPlus_ sketch 
+7. **Select** _Open..._ from the File menu and open the _MegaDrivePlusPlus_ sketch 
 8. **Select** _Upload Using Programmer_ from the _Sketch_ menu.
 
 If no errors show up, your chip is ready!
