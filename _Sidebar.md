@@ -1,7 +1,7 @@
-* [[Home]]
-* [[Choosing a microcontroller]]
+* [[Welcome!|Home]]
+* [[Choosing a Microcontroller]]
   * [[Chip Preparation]]
-* Installation
+* [[Installation]]
   * [[IC BD M5 PAL|Installation on IC BD M5 PAL]]
   * [[IC BD M5 PAL VA4|Installation on IC BD M5 PAL VA4]]
   * [[Installation on Mega Drive 2]]
