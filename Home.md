@@ -16,7 +16,9 @@ autosensing.
 Arduino** board), but please note that **not all features are supported on all chips**, depending on
 the number of available I/O pins, please read on for details.
   - If flashed on an ATtinyX4(A), it is **pin-to-pin compatibile with the _D4s/Seb mod_**.
-- Last but not least, Even though default settings are recommended, **everything can be customized** to taste.
+- Even though default settings are recommended, **everything can be customized** to taste.
+- Uses the widespread **Arduino environment**, allowing for easy development, testing and modifications.
+- Last but not least, it is **Open Source and Free Software**!
 
 
 Use the links on the right to browse among the available pages!
