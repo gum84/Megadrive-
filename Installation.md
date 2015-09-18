@@ -33,4 +33,4 @@ Installation involves a few steps:
 
   * The second set of wires goes between the chip and the Player 1 controller port. This time use your chip diagram and [[this reference|Controller Pad Port Pinout]].
 
-5. Finally, test and reassemble your console! Note that will probably have to use an RGB cable to get the new modes to display correctly on your TV. I recommend getting one from [retro gaming cables](https://www.retrogamingcables.co.uk/games-consoles/sega): they might not be the cheapest, but they are very high quality and will give you the best possible video!
+5. Finally, test and reassemble your console! Note that will probably have to **use an RGB cable to get the new modes to display correctly** on your TV. I recommend getting one from [retro gaming cables](https://www.retrogamingcables.co.uk/games-consoles/sega): they might not be the cheapest, but they are very high quality and will give you the best possible video!
