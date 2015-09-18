@@ -18,7 +18,7 @@ Installation involves a few steps:
 
   There are two sets of wires to be soldered:
 
-  * The first one uses the same points as the D4s/Seb mod, (which is why we use their diagrams). The wires must be soldered between the colored points on the logic board diagram and the pins indicated in the chip diagram, according to the following key:
+  * The first one uses the same points as the D4s/Seb mod (which is why we use their diagrams). The wires must be soldered between the colored points on the logic board diagram and the pins indicated in the chip diagram, according to the following key:
 
     | Color   | Signal             |
     | ------- | ------------------ |
