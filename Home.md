@@ -12,7 +12,7 @@
   - Supports a single led, common-anode or common-cathode dual or RGB LEDs to indicate the current mode (Colors can be set to any value when PWM pins are available).
 - **Reset-From-Pad** (AKA **In-Game-Reset** AKA **IGR**): Press **Start + A + B + C**.
   - Supports consoles with both active-high and active-low reset signals by
-autosensing.
+autosensing (i.e.: all console revisions!).
 - Uses **cheap *Atmel AVR* microcontrollers**.
   - Can be **flashed on different chips** (ATtiny's, ATmega's, or **even a full
 Arduino** board), but please note that **not all features are supported on all chips**, depending on
