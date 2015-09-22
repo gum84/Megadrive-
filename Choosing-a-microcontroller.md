@@ -7,8 +7,8 @@ If you are not too much into the Arduino world, this variety can be confusing, s
 * **If you have an Atmel AVR microcontroller handy**, check out below to see if that particular chip is supported and if the features you are interested in are available on it. If so, **use it**!
 
 * **If you have to buy a new chip from scratch** I'd strongly recommend getting an
-**Arduino Nano-compatible board**, since:
-  * It is cheap (2-3 EUR straight from China).
+**Arduino Nano**, since:
+  * It is cheap (Non-official clones are 2-3 EUR straight from China, shipping included!).
   * It has plenty of pins, which means it supports all the features.
   * It has an embedded USB port and serial converter, allowing for easy
 upgrades (and debugging, in case).
