@@ -4,7 +4,7 @@
 
 ## Features
 - **EUR/USA/JAP mode switching**: this effectively **makes your console universal**, allowing it to **bypass region checks** and to **run all games** without resorting to an adapter.
-  - If you come from a PAL region, you will also be able to **run most games at 60 Hz**, which means **full-speed** and **full-screen**! Get rid of those **black bars**!
+  - If you come from a PAL region, you will also be able to **run most games at 60 Hz**, which means **full-speed** and **full-screen**! Get rid of those **black bars**! See the difference [here](https://youtu.be/X1CW8Da8i1o)!
   - The mod is **switchless**, so you don't need to modify the aesthetics of your console installing ugly switches, but rather you will be able to change the region:
     - Through the **Reset button: Keep pushed** to cycle through modes.
     - From the Player 1 controller pad: Press **Start + B + Up/Down** to cycle through modes or **Start + Down/Left/Right** to set a certain mode (according to the actual chip you have installed, more on this below).
