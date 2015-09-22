@@ -35,7 +35,7 @@ ATtinyX5 only supports Reset-From-Pad.
 ```
 
 ### ATtiny24/44/84(A)
-**On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used, so we resort to using UP and DOWN to cycle through the available modes.
+**On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used**, so we resort to using UP and DOWN to cycle through the available modes.
 
 The connection layout is derived from that of the Seb/D4s mod, so that **if you already have a properly-wired socket in you console, you will just need to add a few wires** and replace the chip to get the new features. The wires to be added are all those coming from the controller pad port.
 ```
@@ -53,7 +53,7 @@ The connection layout is derived from that of the Seb/D4s mod, so that **if you 
 ### ATtiny261/461/861
 **On ATtinyX61 all features are supported**. We even read all buttons with a single instruction.
 
-Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
+_Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins._
 ```
                     ,-----_-----.
            Reset In |1   9  0 20| Pad Port Pin 1
@@ -70,7 +70,9 @@ Tech note: The connection layout puts the SELECT signal on the INT1 pin. This wi
 ```
 
 ### Arduino (or bare ATmega168/328)
-**On a full Arduino board (or just MCU) all features are supported**. Unfortunately, there is no single port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial). But if you put a single ATmega328 on a board and use its internal clock you also get a full PORTB, so we might support that in the future. On a side note, PORTD also has INT1 on pin2, so we could easily use the X61 read function for 6-button pads...
+**On a full Arduino board (or just MCU) all features are supported**.
+
+_Tech note: Unfortunately, there is no single port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial). But if you put a single ATmega328 on a board and use its internal clock you also get a full PORTB, so we might support that in the future. On a side note, PORTD also has INT1 on pin2, so we could easily use the X61 read function for 6-button pads..._
 ```
                     ,-----_-----.
                     |1     A5 28| JP1/2 (Language)
