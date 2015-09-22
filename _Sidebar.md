@@ -6,3 +6,4 @@
   * [[IC BD M5 PAL VA4|Installation on IC BD M5 PAL VA4]]
   * [[Mega Drive 2|Installation on Mega Drive 2]]
   * [[Controller Pad Port Pinout]]
+* [[FAQ]]
