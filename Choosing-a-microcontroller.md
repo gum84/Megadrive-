@@ -35,7 +35,7 @@ ATtinyX5 only supports Reset-From-Pad.
 ```
 
 ### ATtiny24/44/84(A)
-**On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used in combos**.
+**On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used, so we resort to using UP and DOWN to cycle through the available modes.
 
 The connection layout is derived from that of the Seb/D4s mod, so that **if you already have a properly-wired socket in you console, you will just need to add a few wires** and replace the chip to get the new features. The wires to be added are all those coming from the controller pad port.
 ```
@@ -53,7 +53,7 @@ The connection layout is derived from that of the Seb/D4s mod, so that **if you 
 ### ATtiny261/461/861
 **On ATtinyX61 all features are supported**. We even read all buttons with a single instruction.
 
-The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
+Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
 ```
                     ,-----_-----.
            Reset In |1   9  0 20| Pad Port Pin 1
