@@ -19,9 +19,11 @@ as it has plenty of I/O pins and supports all features.
 ## Supported Targets
 
 ### Stand-alone Chips
-All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). Probably other cores will work as well, but you might have to adjust pin numbers and *#defines*, so please stick to ATTinyCore.
+All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). Probably other cores will work as well, but you might have to adjust pin numbers and #defines, so please stick to ATTinyCore.
 
 Note that **all chips should be installed with a 0.1uf capacitor between Vcc and Ground**, as close to the chip as possible. Where there is more than one Vcc pin, all must have a capacitor. To be honest, I have always omitted this capacitor and never encountered any problems, but YMMV. No other specific hardware is needed.
+
+To get the code to fit on the smallest version of the chips (i.e. those with only 2 KB flash) you will probably need to disable the RGB led feature by commenting out the `MODE_LED_*_PIN` #defines and possibly some more features like reset line level autodetection (see `FORCE_RESET_ACTIVE_LEVEL`) and only-save-video-mode-if-changed (comment out the relevant `if` statement inside `save_mode()` only leaving out the `EEPROM.write()` call). If there is interest for this we might make it simpler in the future.
 
 In all diagrams below, outer pin number are referred to the physical chip pins, while inner pin numbers are Arduino "logical" pin numbers.
 
@@ -73,7 +75,7 @@ Tech note: The connection layout puts the SELECT signal on the INT1 pin. This wi
 ```
 
 
-#### ATmega168/328
+#### ATmega88/168/328
 **This is not an officially supported target at the moment**, but it would be trivial to add. You can use it with the normal Arduino pin-mapping though (see below), but the real bonus here is that running the 328 on its internal 8 MHz clock (unlike they do on Arduino boards), we also get access to the full PORTB, allowing us to read all buttons at once.
 
 Support for the 328@8Mhz in the IDE can be found in the [Optiboot](https://github.com/Optiboot/optiboot) package, for instance.
