@@ -24,7 +24,7 @@ All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com
 **NOTE:** In all diagrams, outer pin number are referred to the physical chips, while inner pin numbers are Arduino pin numbers.
 
 #### ATtiny 25/45/85
-ATtinyX5 only supports Reset-From-Pad.
+ATtinyX5's only support Reset-From-Pad.
 ```
                  ,-----_-----.
                  |1 (5)     8| +5V
@@ -35,7 +35,7 @@ ATtinyX5 only supports Reset-From-Pad.
 ```
 
 #### ATtiny24/44/84(A)
-**On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used**, so we resort to using UP and DOWN to cycle through the available modes.
+**On ATtinyX4's most features are supported**. The only exception is that **RIGHT and LEFT cannot be used**, so we resort to using UP and DOWN to cycle through the available modes.
 
 The connection layout is derived from that of the Seb/D4s mod, so that **if you already have a properly-wired socket in you console, you will just need to add a few wires** and replace the chip to get the new features. The wires to be added are all those coming from the controller pad port.
 ```
@@ -51,7 +51,7 @@ The connection layout is derived from that of the Seb/D4s mod, so that **if you 
 ```
 
 #### ATtiny261/461/861
-**On ATtinyX61 all features are supported**. We even read all buttons with a single instruction.
+**On ATtinyX61's all features are supported**. We even read all buttons with a single instruction.
 
 Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
 
@@ -71,8 +71,7 @@ Tech note: The connection layout puts the SELECT signal on the INT1 pin. This wi
 ```
 
 
-### ATmega168/328
-
+#### ATmega168/328
 **This is not an officially supported target at the moment**, but it would be trivial to add. You can use it with the normal Arduino pin-mapping though (see below), but the real bonus here is that running the 328 on its internal 8 MHz clock (unlike they do on Arduino boards), we also get access to the full PORTB, allowing us to read all buttons at once.
 
 Support for the 328@8Mhz in the IDE can be found in the [Optiboot](https://github.com/Optiboot/optiboot) package, for instance.
