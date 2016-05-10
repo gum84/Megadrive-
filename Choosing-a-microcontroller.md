@@ -171,7 +171,17 @@ Tech note: Unfortunately, on all these boards there is no single I/O port whose 
 
 Arduino Pro Mini does not have an onboard USB <-> Serial converter, so you will have to use an external one (or ICSP) to program it. That's what the pins on the top are meant for.
 
-Be careful with the position of the A4/A5 pins! You can remap them in the code to pins 7/8 if you prefer.
+Be careful with the position of the A4/A5 pins! You can remap them in the code to pins 7/8 if you prefer. Simply change the lines:
+```
+#define VIDEOMODE_PIN A4
+#define LANGUAGE_PIN A5
+```
+to:
+```
+#define VIDEOMODE_PIN 7
+#define LANGUAGE_PIN 8
+```
+Then program as usual.
 
 **WARNING: You MUST use the 5V/16MHz version!**
 
