@@ -16,12 +16,14 @@ upgrades (and debugging, in case).
 * An **ATtiny861** is also **a good choice**, if you prefer sticking to a single chip,
 as it has plenty of I/O pins and supports all features.
 
-## Supported Microcontrollers
+## Supported Targets
+
+### Stand-alone Chips
 All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). Probably other cores will work as well, but you might have to adjust pin numbers and *#defines*, so please stick to ATTinyCore..
 
 **NOTE:** In all diagrams, outer pin number are referred to the physical chips, while inner pin numbers are Arduino pin numbers.
 
-### ATtiny 25/45/85
+#### ATtiny 25/45/85
 ATtinyX5 only supports Reset-From-Pad.
 ```
                  ,-----_-----.
@@ -32,7 +34,7 @@ ATtinyX5 only supports Reset-From-Pad.
                  `-----------'
 ```
 
-### ATtiny24/44/84(A)
+#### ATtiny24/44/84(A)
 **On ATtinyX4 most features are supported**. The only exception is that **RIGHT and LEFT cannot be used**, so we resort to using UP and DOWN to cycle through the available modes.
 
 The connection layout is derived from that of the Seb/D4s mod, so that **if you already have a properly-wired socket in you console, you will just need to add a few wires** and replace the chip to get the new features. The wires to be added are all those coming from the controller pad port.
@@ -48,7 +50,7 @@ The connection layout is derived from that of the Seb/D4s mod, so that **if you 
                   `-----------'
 ```
 
-### ATtiny261/461/861
+#### ATtiny261/461/861
 **On ATtinyX61 all features are supported**. We even read all buttons with a single instruction.
 
 Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
@@ -68,8 +70,36 @@ Tech note: The connection layout puts the SELECT signal on the INT1 pin. This wi
                     `-----------'
 ```
 
+
+### ATmega168/328
+
+**This is not an officially supported target at the moment**, but it would be trivial to add. You can use it with the normal Arduino pin-mapping though (see below), but the real bonus here is that running the 328 on its internal 8 MHz clock (unlike they do on Arduino boards), we also get access to the full PORTB, allowing us to read all buttons at once.
+
+Support for the 328@8Mhz in the IDE can be found in the [Optiboot](https://github.com/Optiboot/optiboot) package, for instance.
+
+Note that you **MUST** connect both grounds (pins 8 and 22) and both VCCs (pins 7 and 20).
+
+```
+                    ,-----_-----.
+                    |1     A5 28| JP1/2 (Language)
+                    |2   0 A4 27| JP3/4 (Video Mode)
+                    |3   1 A3 26| Reset In
+     Pad Port Pin 7 |4   2 A2 25| Reset Out
+     Pad Port Pin 3 |5   3 A1 24| Pad Port Pin 2
+     Pad Port Pin 4 |6   4 A0 23| Pad Port Pin 1
+                +5V |7        22| GND
+                GND |8        21|
+                    |9        20| +5V
+                    |10    13 19| (Built-in LED)
+     Pad Port Pin 6 |11  5 12 18|
+     Pad Port Pin 9 |12  6 11 17| LED Blue
+                    |13  7 10 16| LED Green
+                    |14  8  9 15| LED Red
+                    `-----------'
+```
+
 ### Arduino Boards
-**On a full Arduino board all features are supported**.
+**On Arduino boards all features are supported**.
 
 All the boards below are essentially similar with respect to the hardware and software. What changes is basically only the form factor. An Arduino Duemilanove/Uno board is pretty big and, while there is quite a lot of space inside the Mega Drive/Genesis for it to fit, using a Nano or Pro Mini is a better choice. The Nano and Pro Mini are also very similar, the main difference being that the former has an onboard USB connector that makes it easy to load/update the firmware, while the latter requires an external adapter.
 
@@ -162,31 +192,4 @@ Be careful with the position of the A4/A5 pins! You can remap them in the code t
         LED Red |~[X]9                  SS/10[X]~| LED Green
                 |           [RST-BTN]            |    
                 +--------------------------------+  
-```
-
-### Standalone ATmega168/328
-
-**This is not an officially supported target at the moment**, but it would be trivial to add. You can use it with the normal Arduino pin-mapping though, but the real bonus here is that running the 328 on its internal 8 MHz clock (unlike they do on Arduino boards), we also get access to the full PORTB, allowing us to read all buttons at once.
-
-Support for the 328@8Mhz can be found in the [Optiboot](https://github.com/Optiboot/optiboot) package, for instance.
-
-Note that you **MUST** connect both grounds (pins 8 and 22) and both VCCs (pins 7 and 20).
-
-```
-                    ,-----_-----.
-                    |1     A5 28| JP1/2 (Language)
-                    |2   0 A4 27| JP3/4 (Video Mode)
-                    |3   1 A3 26| Reset In
-     Pad Port Pin 7 |4   2 A2 25| Reset Out
-     Pad Port Pin 3 |5   3 A1 24| Pad Port Pin 2
-     Pad Port Pin 4 |6   4 A0 23| Pad Port Pin 1
-                +5V |7        22| GND
-                GND |8        21|
-                    |9        20| +5V
-                    |10    13 19| (Built-in LED)
-     Pad Port Pin 6 |11  5 12 18|
-     Pad Port Pin 9 |12  6 11 17| LED Blue
-                    |13  7 10 16| LED Green
-                    |14  8  9 15| LED Red
-                    `-----------'
 ```
