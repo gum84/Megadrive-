@@ -17,6 +17,7 @@ upgrades (and debugging, in case).
 as it has plenty of I/O pins and supports all features.
 
 ## Supported Targets
+If you plan to do firmware updates in the future **it is strongly recommended to mount the chip in a socket**, so that you can easily remove it and reflash it. In-system programming is theoretically possible but has not been tested, so **if you use it, you do so at your own risk**.
 
 ### Stand-alone Chips
 All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). Probably other cores will work as well, but you might have to adjust pin numbers and #defines, so please stick to ATTinyCore.
