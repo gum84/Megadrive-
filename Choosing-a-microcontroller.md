@@ -24,7 +24,7 @@ All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com
 
 Note that **all chips should be installed with a 0.1uf capacitor between Vcc and Ground**, as close to the chip as possible. Where there is more than one Vcc pin, all must have a capacitor. To be honest, I have always omitted this capacitor and never encountered any problems, but YMMV. No other specific hardware is needed.
 
-To get the code to fit on the smallest version of the chips (i.e. those with only 2 KB flash) some features are automatically disabled in order to save flash space: support for the RGB led is replaced with a single led, which is flashed a number of times according to the newly selected video mode. On ATtiny24 the only-save-video-mode-if-changed features is disabled as well. This will wear out EEPROM a bit more quickly but it will still take ages ;).
+To get the code to fit on the smallest version of the chips (i.e. those with only 2 KB flash) some features are automatically disabled in order to save flash space: support for the RGB led is replaced with that for a single led, which is flashed a number of times according to the newly selected video mode. On ATtiny24 the only-save-video-mode-if-changed feature is disabled as well. This will wear out EEPROM a bit more quickly but it will still take ages ;).
 
 In all diagrams below, outer pin number are referred to the physical chip pins, while inner pin numbers are Arduino "logical" pin numbers.
 
