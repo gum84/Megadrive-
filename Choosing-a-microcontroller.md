@@ -23,7 +23,7 @@ All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com
 
 Note that **all chips should be installed with a 0.1uf capacitor between Vcc and Ground**, as close to the chip as possible. Where there is more than one Vcc pin, all must have a capacitor. To be honest, I have always omitted this capacitor and never encountered any problems, but YMMV. No other specific hardware is needed.
 
-In all diagrams below, outer pin number are referred to the physical chip pins, while inner pin numbers are Arduino pin numbers.
+In all diagrams below, outer pin number are referred to the physical chip pins, while inner pin numbers are Arduino "logical" pin numbers.
 
 #### ATtiny 25/45/85
 ATtinyX5's only support Reset-From-Pad.
