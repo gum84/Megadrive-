@@ -17,11 +17,9 @@ upgrades (and debugging, in case).
 as it has plenty of I/O pins and supports all features.
 
 ## Supported Microcontrollers
-All diagrams below for ATtiny chips are based on ATTinyCore:
-https://github.com/SpenceKonde/ATTinyCore. Probably other cores will work as well, but you might have to adjust pin numbers and *#defines*, so please stick to ATTinyCore..
+All diagrams below for ATtiny chips are based on [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). Probably other cores will work as well, but you might have to adjust pin numbers and *#defines*, so please stick to ATTinyCore..
 
-**NOTE:** In all diagrams, outer pin number are referred to the physical chips,
-while inner pin numbers are Arduino pin numbers.
+**NOTE:** In all diagrams, outer pin number are referred to the physical chips, while inner pin numbers are Arduino pin numbers.
 
 ### ATtiny 25/45/85
 ATtinyX5 only supports Reset-From-Pad.
@@ -53,7 +51,8 @@ The connection layout is derived from that of the Seb/D4s mod, so that **if you 
 ### ATtiny261/461/861
 **On ATtinyX61 all features are supported**. We even read all buttons with a single instruction.
 
-_Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins._
+Tech note: The connection layout puts the SELECT signal on the INT1 pin. This will probably be needed if we ever want to read 6-button pads. LED is connected to PWM-capable pins.
+
 ```
                     ,-----_-----.
            Reset In |1   9  0 20| Pad Port Pin 1
@@ -69,14 +68,18 @@ _Tech note: The connection layout puts the SELECT signal on the INT1 pin. This w
                     `-----------'
 ```
 
-### Full Arduino Board
+### Arduino Boards
 **On a full Arduino board all features are supported**.
 
-_Tech note: Unfortunately, there is no single port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial)._
+All the boards below are essentially similar with respect to the hardware and software. What changes is basically only the form factor. An Arduino Duemilanove/Uno board is pretty big and, while there is quite a lot of space inside the Mega Drive/Genesis for it to fit, using a Nano or Pro Mini is a better choice. The Nano and Pro Mini are also very similar, the main difference being that the former has an onboard USB connector that makes it easy to load/update the firmware, while the latter requires an external adapter.
 
-*All Arduino ASCII-Art below courtesy of [BusyDuckMan](http://busyducks.com/ascii-art-arduinos))*
+**Be careful with the powering of these boards**: All diagrams below assume that power is provided straight to the +5V pin each of these boards has. There are a few reasons why it would be better to power them through the Vin/Raw pin, connecting it straight to power supply input, as all boards have their own voltage regulator.
 
-#### Arduino Uno
+Tech note: Unfortunately, on all these boards there is no single I/O port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial).
+
+*All Arduino ASCII-Art in this section courtesy of [BusyDuckMan](http://busyducks.com/ascii-art-arduinos).*
+
+#### Arduino Duemilanove/Uno
 ```
                     +----[PWR]-------------------| USB |--+
                     |                            +-----+  |
@@ -140,8 +143,8 @@ Be careful with the position of the A4/A5 pins! You can remap them in the code t
 **WARNING: You MUST use the 5V/16MHz version!**
 
 ```
-		                  D0   D1   RST
-		   GND  GND  VCC  RX   TX   /DTR
+                                  D0   D1   RST
+                   GND  GND  VCC  RX   TX   /DTR
                 +--------------------------------+
                 |  [ ]  [ ]  [ ]  [ ]  [ ]  [ ]  |
                 |              FTDI              |
