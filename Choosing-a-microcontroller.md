@@ -1,4 +1,4 @@
-**MegaDrivePlusPlus can run on several microcontrollers**, supporting different subsets of functionalities. It can probably be ported to many others with little effort, thanks to the flexibility of the Arduino platform.
+**MegaDrive++ can run on several microcontrollers**, supporting different subsets of functionalities. It can probably be ported to many others with little effort, thanks to the flexibility of the Arduino platform.
 
 If you are not too much into the Arduino world, this variety can be confusing, so here's how to choose the best microcontroller for you:
 
@@ -69,10 +69,10 @@ _Tech note: The connection layout puts the SELECT signal on the INT1 pin. This w
                     `-----------'
 ```
 
-### Arduino (or bare ATmega168/328)
-**On a full Arduino board (or just MCU) all features are supported**.
+### Full Arduino Board
+**On a full Arduino board all features are supported**.
 
-_Tech note: Unfortunately, there is no single port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial). But if you put a single ATmega328 on a board and use its internal clock you also get a full PORTB, so we might support that in the future. On a side note, PORTD also has INT1 on pin2, so we could easily use the X61 read function for 6-button pads..._
+_Tech note: Unfortunately, there is no single port whose pins are all available, so we resort again to reading UP and DOWN from a different port. Technically we could use PORTD, but since working on a full Arduino board is mainly useful to get debugging messages through the serial port, we don't do that (PD0/1 are used for hardware serial). But if you put a single ATmega328 on a board and set it to use its internal 8 MHz clock you also get a full PORTB, so we might support that in the future. On a side note, PORTD also has INT1 on pin2, so we could easily use the X61 read function for 6-button pads..._
 ```
                     ,-----_-----.
                     |1     A5 28| JP1/2 (Language)
