@@ -13,8 +13,7 @@ If you are not too much into the Arduino world, this variety can be confusing, s
   * It has an embedded USB port and serial converter, allowing for easy
 upgrades (and debugging, in case).
 
-* An **ATtiny861** is also **a good choice**, if you prefer sticking to a single chip,
-as it has plenty of I/O pins and supports all features.
+* An **ATtiny861** (or 461 if you can find it cheaper) is also **a good choice**, if you prefer sticking to a single chip, as it has plenty of I/O pins and supports all features.
 
 ## Supported Targets
 If you plan to do firmware updates in the future **it is strongly recommended to mount the chip in a socket**, so that you can easily remove it and reflash it. In-system programming is theoretically possible but has not been tested, so **if you use it, you do so at your own risk**.
