@@ -6,4 +6,5 @@
 
  A description of the Mega Drive controller protocol can be found at the following pages:
  - http://www.cs.cmu.edu/~chuck/infopg/segasix.txt
+ - https://applause.elfmimi.jp/md6bpad-e.html
  - http://mdpal60.net/wiki/megadrive/regionmod/start
