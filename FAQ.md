@@ -8,3 +8,5 @@
  - http://www.cs.cmu.edu/~chuck/infopg/segasix.txt
  - https://applause.elfmimi.jp/md6bpad-e.html
  - http://mdpal60.net/wiki/megadrive/regionmod/start
+
+ Some of the above pages have also been archived on this wiki, in case they disappear, have a look at the menu on the right.
